@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to right, #66b450, #7e9777, #d0e6d0);
+    position: relative;
+    font-family: "Oswald", sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* navbar */
+.nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 7vh;
+    width: 100%;
+    padding: 0 10rem;
+    background-color: #a0dd8f80;
+}
+
+.nav__container {
+    max-width: 1024px;
+}
+
+.nav__logo {
+    color: rgb(58, 57, 57);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.nav__items ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav__items ul li a {
+    text-decoration: none;
+    color: rgb(71, 69, 69);
+    font-weight: 500;
+}
+
+.nav__items .active {
+    color: white !important;
+}
+
+/* hero */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100vw;
+    padding: 10rem;
+}
+
+.hero__text {
+    flex: 1;
+    padding: 3rem 0;
+}
+
+.hero__text button {
+    margin-top: 1rem;
+    background: #629754;
+    border-radius: 999px;
+    box-shadow: #161515 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 12px 20px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+}
+
+.hero__text p:nth-child(1) {
+    font-size: 60px;
+}
+
+.hero__text p:nth-child(2) {
+    font-size: 80px;
+}
+
+.hero__text p:nth-child(3) {
+    font-size: 30px;
+}
+
+.hero__text p:nth-child(4) {
+    font-size: 20px;
+}
+
+.hero__image {
+    flex: 1;
+}
+
+/* subpages */
+.subpage {
+    margin-top: 5rem;
+    height: 100vh;
+    width: 100vw;
+    padding: 0 10rem;
+}
+
+.subpage__heading {
+    width: 100%;
+    margin-top: 5rem;
+    text-align: center;
+
+}
+
+.subpage__heading p {
+    font-size: 3rem;
+    color: rgb(58, 57, 57);
+    font-size: 27px;
+}
+
+.subpage__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subpage__text {
+    flex: 1
+}
+
+.subpage__text p {
+    font-size: 20px;
+}
+
+.subpage__image {
+    flex: 1
+}
+
+/* contact page */
+.contact {
+    margin-top: 7rem;
+    height: 100vh;
+    width: 100vw;
+    padding: 0 10rem;
+}
+
+.contact__heading {
+    width: 100%;
+    text-align: center;
+}
+
+.contact__heading p {
+    font-size: 3rem;
+    color: rgb(58, 57, 57);
+    font-size: 32px;
+}
+
+.contact__container {
+    display: flex;
+}
+
+.contact__form {
+    flex: 1;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin-top: 5rem;
+}
+
+.contact__form input {
+    min-height: 4rem;
+    border: none;
+    outline: none;
+}
+
+.contact__form input::placeholder {
+    padding: 0 1rem;
+    font-size: 1.4rem;
+}
+
+.contact__form input:active {
+    border: none;
+    outline: none;
+}
+
+.contact__form button {
+    background: #629754;
+    border-radius: 999px;
+    box-shadow: #161515 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+}
+
+.contact__image {
+    flex: 1;
+}
